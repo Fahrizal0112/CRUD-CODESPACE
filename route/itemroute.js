@@ -1,6 +1,6 @@
 const express = require('express');
 const validateitem = require('../middleware/validateitem');
-const ItemController = require('../controller/ItemController');
+const ItemController = require('../controller/itemcontroller');
 const router = express.Router();
 
 router.post('/', validateitem, ItemController.CreateItem);
